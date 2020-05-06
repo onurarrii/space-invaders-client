@@ -1,0 +1,48 @@
+{
+  "properties": [
+    {
+      "name": "custom.game.mouse-position-notify-delay",
+      "type": "java.lang.String",
+      "description": "How many milliseconds to wait between mouse position notifications."
+    },
+    {
+      "name": "custom.game.status-request-delay",
+      "type": "java.lang.String",
+      "description": "How many milliseconds to wait between get game status requests."
+    },
+    {
+      "name": "custom.window.height",
+      "type": "java.lang.String",
+      "description": "Height of the window."
+    },
+    {
+      "name": "custom.window.width",
+      "type": "java.lang.String",
+      "description": "Width of the window."
+    },
+    {
+      "name": "custom.window.name",
+      "type": "java.lang.String",
+      "description": "Name of the window."
+    },
+    {
+      "name": "custom.server.game.api.uri",
+      "type": "java.lang.String",
+      "description": "Name of Game API."
+    },
+    {
+      "name": "custom.server.leaderboard.api.uri",
+      "type": "java.lang.String",
+      "description": "Name of Leaderboard API."
+    },
+    {
+      "name": "custom.server.auth.api.uri",
+      "type": "java.lang.String",
+      "description": "Name of Auth API."
+    },
+    {
+      "name": "custom.server.base.api.uri",
+      "type": "java.lang.String",
+      "description": "Base API url."
+    }
+  ] }

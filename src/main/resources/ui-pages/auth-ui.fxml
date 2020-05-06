@@ -1,0 +1,58 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="com.group14.termproject.client.controller.AuthController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center"
+          hgap="10" vgap="10" stylesheets="@style.css">
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints minWidth="200" prefWidth="200"
+                           maxWidth="500" hgrow="ALWAYS">
+        </ColumnConstraints>
+    </columnConstraints>
+
+    <Label text="Space Invaders" GridPane.columnIndex="0"
+           GridPane.rowIndex="0" GridPane.columnSpan="1"
+           GridPane.rowSpan="1" GridPane.halignment="CENTER" styleClass="title-label">
+        <GridPane.margin>
+            <Insets top="20" bottom="20"/>
+        </GridPane.margin>
+    </Label>
+
+    <TextField fx:id="usernameField" prefHeight="40"
+               GridPane.columnIndex="0" GridPane.rowIndex="1" promptText="Username" alignment="CENTER"
+               styleClass="text-field"/>
+
+    <PasswordField fx:id="passwordField" prefHeight="40"
+                   GridPane.columnIndex="0" GridPane.rowIndex="2" promptText="Password" alignment="CENTER"
+                   styleClass="text-field"/>
+
+
+    <Button fx:id="loginButton" text="Login"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="3"
+            GridPane.columnSpan="2" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#onLoginClick" styleClass="button-label-base, button-label">
+        <GridPane.margin>
+            <Insets top="20" bottom="5"/>
+        </GridPane.margin>
+    </Button>
+    <Button fx:id="registerButton" text="Register"
+            prefWidth="100" prefHeight="40" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="4"
+            GridPane.columnSpan="2" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#onRegisterClick" styleClass="button-label-base, button-label">
+        <GridPane.margin>
+            <Insets top="5" bottom="5"/>
+        </GridPane.margin>
+    </Button>
+</GridPane>

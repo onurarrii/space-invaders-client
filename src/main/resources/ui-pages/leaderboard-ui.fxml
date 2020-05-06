@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.group14.termproject.client.controller.LeaderboardController" stylesheets="@style.css">
+
+    <HBox>
+        <Button fx:id="queryButtonLastWeek" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                onAction="#onLastWeekClick" text="7 Days" HBox.hgrow="ALWAYS" styleClass="button-label-base, button-label"/>
+        <Button fx:id="queryButtonLastMonth" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                onAction="#onLastMonthClick" text="30 Days" HBox.hgrow="ALWAYS" styleClass="button-label-base, button-label"/>
+        <Button fx:id="queryButtonAllTime" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                onAction="#onAllTimeClick" text="All Time" HBox.hgrow="ALWAYS" styleClass="button-label-base, button-label"/>
+        <Button fx:id="backButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
+                onAction="#onBackButtonClick" text="Back" HBox.hgrow="ALWAYS" styleClass="button-label-base, button-label"/>
+    </HBox>
+
+    <TableView fx:id="table" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="userColumn" style="-fx-alignment: CENTER;-fx-font-size: 12pt;" text="User"/>
+            <TableColumn fx:id="scoreColumn"  style="-fx-alignment: CENTER;-fx-font-size: 12pt;" text="Score"/>
+            <TableColumn fx:id="createdOnColumn" style="-fx-alignment: CENTER;-fx-font-size: 12pt;" text="Date"/>
+        </columns>
+    </TableView>
+
+</VBox>
